@@ -10,7 +10,12 @@
 </head>
 <body>
     <main id="app">
-        <button @click="getEmail"></button>
+        <ul>
+            <li v-for="(element, index) in email">
+                {{email[index]}}
+                
+            </li>
+        </ul>
     </main>
     <script src="./js/app.js"></script>
 </body>
