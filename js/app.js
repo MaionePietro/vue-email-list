@@ -10,8 +10,8 @@ createApp({
         getEmail() {
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
                 .then((res) => {
-                    console.log(res.data.email)
-                    this.email.push(res.data.email)
+                    console.log('email generata: '+res.data.response)
+                    this.email.push(res.data.response)
                 })
         }
     },
