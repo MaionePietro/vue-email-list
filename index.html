@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,17 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
+
 <body>
     <main id="app">
-        <ul>
+        <ul v-if="email.length === 10">
             <li v-for="(element, index) in email">
-                {{email[index]}}
-                
+                {{element}}
             </li>
         </ul>
+        <div v-else>sto generando le email...</div>
     </main>
     <script src="./js/app.js"></script>
 </body>
+
 </html>
